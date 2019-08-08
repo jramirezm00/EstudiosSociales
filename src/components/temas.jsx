@@ -55,14 +55,14 @@ class Temas extends Component {
           <Header className="m-2" />
           <hr className="style1" />
         </div>
+        <div className="col-md-2 text-center">
+          <ListGroup
+            items={this.state.categorias}
+            selectedItem={this.state.selectedCategoria}
+            onItemSelect={this.handleCategoriaSelect}
+          />
+        </div>
         <div className="row">
-          <div className="col-3 m-2">
-            <ListGroup
-              items={this.state.categorias}
-              selectedItem={this.state.selectedCategoria}
-              onItemSelect={this.handleCategoriaSelect}
-            />
-          </div>
           <div className="col m-2 text-dark">
             <p style={{ textAlign: 'center' }}>Se encontraron {filtered.length} temas</p>
             <TemasTable temas={temas} onLike={this.handleLike} />
