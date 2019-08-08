@@ -1,5 +1,6 @@
 import React from 'react';
 import Like from './like';
+import GamePad from './gamepad';
 
 const TemasTable = props => {
   const { temas, onLike } = props;
@@ -11,6 +12,7 @@ const TemasTable = props => {
           <th>Categoria</th>
           <th>Grado</th>
           <th />
+          <th />
         </tr>
       </thead>
       <tbody>
@@ -21,6 +23,9 @@ const TemasTable = props => {
             <td>{tema.grado}</td>
             <td>
               <Like liked={tema.liked} onClick={() => onLike(tema)} />
+            </td>
+            <td>
+              <GamePad />
             </td>
           </tr>
         ))}
