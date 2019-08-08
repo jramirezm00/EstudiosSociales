@@ -55,12 +55,14 @@ class Temas extends Component {
           <Header className="m-2" />
           <hr className="style1" />
         </div>
-        <div className="col-md-2 text-center">
-          <ListGroup
-            items={this.state.categorias}
-            selectedItem={this.state.selectedCategoria}
-            onItemSelect={this.handleCategoriaSelect}
-          />
+        <div className="row">
+          <div className="col m-2 text-center  d-flex align-items-center justify-content-center">
+            <ListGroup
+              items={this.state.categorias}
+              selectedItem={this.state.selectedCategoria}
+              onItemSelect={this.handleCategoriaSelect}
+            />
+          </div>
         </div>
         <div className="row">
           <div className="col m-2 text-dark">
