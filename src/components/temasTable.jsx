@@ -5,7 +5,7 @@ import GamePad from './gamepad';
 const TemasTable = props => {
   const { temas, onLike } = props;
   return (
-    <table className="table">
+    <table className="table" id="temas">
       <thead>
         <tr>
           <th>Tema</th>
