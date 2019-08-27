@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const Header = () => {
   return (
-    <div class="card-group ">
+    <div class="card-group" id="imagenes">
       <div class="card">
         <img
           src="https://farm4.staticflickr.com/3153/2399273202_165f20acf8_b.jpg"
