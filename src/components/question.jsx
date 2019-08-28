@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/boxgame.css';
+import { Link } from 'react-router-dom';
 
 class Question extends Component {
   render() {
@@ -22,7 +23,9 @@ class Question extends Component {
 
         <div className="answer">
           <button className="active">VER RESPUESTA</button>
-          <button className="next">Siguiente Pregunta</button>
+          <Link to="/menu">
+            <button className="next">VOLVER</button>
+          </Link>
         </div>
 
         <img src="https://i.pinimg.com/originals/7f/e6/20/7fe62069a5bac04403b569177991c95a.png" />

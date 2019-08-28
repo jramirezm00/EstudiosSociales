@@ -6,6 +6,7 @@ import Route from 'react-router-dom/Route';
 import Crossword from './components/crossword/crossword';
 import Question from './components/question';
 import Questiontwo from './components/questiontwo';
+import Menu from './components/gameMenu';
 
 function App() {
   return (
@@ -19,6 +20,13 @@ function App() {
           }}
         ></Route>
         <Route
+          path="/menu"
+          exact
+          render={() => {
+            return <Menu />;
+          }}
+        ></Route>
+        <Route
           path="/crossword"
           exact
           render={() => {
@@ -26,14 +34,14 @@ function App() {
           }}
         ></Route>
         <Route
-          path="/pregunta1"
+          path="/question1"
           exact
           render={() => {
             return <Question />;
           }}
         ></Route>
         <Route
-          path="/pregunta2"
+          path="/question2"
           exact
           render={() => {
             return <Questiontwo />;
