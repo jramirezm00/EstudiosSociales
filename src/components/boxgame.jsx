@@ -1,8 +1,5 @@
-import React, { Component } from "react";
-import boxgame from "../css/boxgame.css";
-import Header from "./header";
+import React, { Component } from 'react';
 import Footer from "./footer";
-import NavBar from "./navBar";
 import Question from "./question";
 import Title from "./title";
 import InfoTitle from "./infoTitle";
@@ -18,7 +15,6 @@ class Boxgame extends Component {
             <Question />
           </div>
         </div>
-
         <Footer />
       </div>
     );
