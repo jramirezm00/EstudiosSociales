@@ -1,15 +1,14 @@
-import React, { Component } from "react";
-import boxgame from "../css/boxgame.css";
+import React, { Component } from 'react';
+import '../css/boxgame.css';
 
 class Question extends Component {
   render() {
     return (
       <div className="question">
         <div className="boxquestion">
-          Los estudios sociales son o se definen como el estudio de los aspectos
-          más importantes de las personas que involucran el medio social donde
-          habitan, trabajan y disfrutan de los espacios en común con el medio
-          ambiente que los rodea.
+          Los estudios sociales son o se definen como el estudio de los aspectos más importantes de
+          las personas que involucran el medio social donde habitan, trabajan y disfrutan de los
+          espacios en común con el medio ambiente que los rodea.
         </div>
 
         <p>La afirmación anterior hace referencia a:</p>
