@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from './footer';
 
 const Menu = props => {
   return (
-    <main
-      className="container"
-      style={{ backgroundImage: 'url(' + require('../images/monsters.png') + ')' }}
-    >
-      <div>
+    <main className="container">
+      <div style={{ backgroundImage: 'url(' + require('../images/monsters.png') + ')' }}>
         <h1 className="text-center">
           <i class="fa fa-grav" aria-hidden="true" />
           Menú de Juegos
@@ -56,6 +54,8 @@ const Menu = props => {
         <br></br>
         <br></br>
       </div>
+      <hr className="style1" />
+      <Footer></Footer>
     </main>
   );
 };
