@@ -7,6 +7,8 @@ import Crossword from './components/crossword/crossword';
 import Question from './components/question';
 import Questiontwo from './components/questiontwo';
 import Menu from './components/gameMenu';
+import Footer from './components/footer';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -30,7 +32,19 @@ function App() {
           path="/crossword"
           exact
           render={() => {
-            return <Crossword />;
+            return (
+              <div>
+                <Crossword></Crossword>
+                <div>
+                  <Link to="/menu">
+                    <button className="btn btn-info">VOLVER</button>
+                  </Link>
+                </div>
+                <br></br>
+                <hr className="style1" />
+                <Footer></Footer>
+              </div>
+            );
           }}
         ></Route>
         <Route

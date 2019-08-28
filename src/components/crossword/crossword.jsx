@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './crossword.css';
 const GRID_DATA = [
   //   Row A
